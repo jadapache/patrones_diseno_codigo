@@ -1,7 +1,7 @@
 # endpoints/favorites.py
 from flask_restful import Resource, reqparse
-from auth_decorator import require_auth
-from repositories.favorite_repository import FavoriteRepository
+from auth.auth_decorator import require_auth
+from repository.favorite_repository import FavoriteRepository
 
 class FavoritesResource(Resource):
     def __init__(self):

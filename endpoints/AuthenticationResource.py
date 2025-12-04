@@ -1,7 +1,7 @@
 # endpoints/auth.py
 from flask_restful import Resource, reqparse
 from flask import request
-from auth_decorator import AuthenticationManager
+from auth.auth_decorator import AuthenticationManager
 
 class AuthenticationResource(Resource):
     def __init__(self):

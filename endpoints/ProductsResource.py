@@ -1,8 +1,8 @@
 # endpoints/products.py
 from flask_restful import Resource, reqparse
 from flask import request
-from auth_decorator import require_auth
-from repositories.product_repository import ProductRepository
+from auth.auth_decorator import require_auth
+from repository.product_repository import ProductRepository
 
 class ProductsResource(Resource):
     def __init__(self):

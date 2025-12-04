@@ -1,7 +1,7 @@
 # endpoints/categories.py
 from flask_restful import Resource, reqparse
-from auth_decorator import require_auth
-from repositories.category_repository import CategoryRepository
+from auth.auth_decorator import require_auth
+from repository.category_repository import CategoryRepository
 
 class CategoriesResource(Resource):
     def __init__(self):
